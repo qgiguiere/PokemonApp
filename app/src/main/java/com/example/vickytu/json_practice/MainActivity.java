@@ -68,7 +68,11 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject c = pokemons.getJSONObject(i);
                         String name = c.getString("name");
                         String id = c.getString("id");
+                        String type = c.getString("type");
+                        String height = c.getString("height");
+                        String weight = c.getString("weight");
                         String candy = c.getString("candy");
+
 
 
                         // tmp hash map for a single pokemon
@@ -77,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                         // add each child node to HashMap key => value
                         pokemon.put("name", name);
                         pokemon.put("id", id);
+                        pokemon.put("type", type);
+                        pokemon.put("height", height);
+                        pokemon.put("weight", weight);
                         pokemon.put("candy", candy);
 
                         // adding a pokemon to our pokemon list
@@ -124,8 +131,8 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
             ListAdapter adapter = new SimpleAdapter(MainActivity.this, pokemonList,
-                    R.layout.list_item, new String[]{"name", "id", "candy"},
-                    new int[]{R.id.name, R.id.id, R.id.candy});
+                    R.layout.list_item, new String[]{"name", "id", "type", "height", "weight", "candy"},
+                    new int[]{R.id.name, R.id.id, R.id.type, R.id.height, R.id.weight, R.id.candy});
             list_view.setAdapter(adapter);
         }
     }
