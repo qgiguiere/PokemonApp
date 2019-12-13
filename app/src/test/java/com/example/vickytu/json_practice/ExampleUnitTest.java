@@ -1,4 +1,4 @@
-package com.example.vickytu.json_practice;
+package com.example.qgiguiere.json_practice;
 
 import org.junit.Test;
 

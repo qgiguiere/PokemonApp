@@ -1,4 +1,4 @@
-package com.example.vickytu.json_practice;
+package com.example.qgiguiere.json_practice;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.vickytu.json_practice", appContext.getPackageName());
+        assertEquals("com.example.qgiguiere.json_practice", appContext.getPackageName());
     }
 }

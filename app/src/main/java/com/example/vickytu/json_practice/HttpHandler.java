@@ -1,7 +1,7 @@
-package com.example.vickytu.json_practice;
+package com.example.qgiguiere.json_practice;
 
 /**
- * Created by vickytu on 7/24/17.
+ * Created by qgiguiere on 7/24/17.
  */
 
 import java.io.BufferedReader;

@@ -1,4 +1,4 @@
-package com.example.vickytu.json_practice;
+package com.example.qgiguiere.json_practice;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... arg0) {
             HttpHandler sh = new HttpHandler();
             // TODO: make a request to the URL
-            String url = "https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json";
+            String url = "https://pokeapi.co/api/v2/";
             String jsonString = "";
             try {
                 jsonString = sh.makeHttpRequest(createUrl(url));
