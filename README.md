@@ -2,7 +2,7 @@
 
 This is the solution to the app that displays a list of Pokemons and their respective characteristics taken from JSON data. Used in a Udacity course in the Android Basics Nanodegree by Google.
 
-# Pre-requisites
+# Prerequisites
 
 Android SDK v24
 Android Build Tools v23.0.3
